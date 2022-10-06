@@ -38,5 +38,20 @@ if(isset($_GET['x'],$_GET['y'])){
 }else{
     echo "Error";
 }
+echo "<br>";
+//ejemplo 4 funciones dentro de otras funciones 
+function getName($name){
+    $texto = "El nombre es: $name";
+    return $texto;
+}
+function getLastname($lastname){
+    $texto = "El apellido es: $lastname";
+    return $texto;
+}
 
+function returnName($name,$lastname){
+    $texto = getName($name)."<br>".getLastname($lastname);
+    return $texto;
+}
+echo returnName("alxguido.com","alexguido.com");
 ?>
