@@ -33,4 +33,6 @@ function evening(){
 function night(){
     return "good night";
 }
+$horario = "morning";
+echo $horario();
 ?>
